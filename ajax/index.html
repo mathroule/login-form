@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Ajax form</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="form.js"></script>
+    <meta charset="UTF-8">
+</head>
+<body>
+<div class="col-sm-6 col-sm-offset-3">
+
+    <h1>AJAX login form</h1>
+
+    <form action="process.php" method="POST">
+
+        <div id="username-group" class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" name="username" id="username">
+            <!-- errors will go here -->
+        </div>
+
+        <div id="password-group" class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" name="password" id="password">
+            <!-- errors will go here -->
+        </div>
+
+        <button id="submit" class="btn btn-success">Submit</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+</body>
+</html>
