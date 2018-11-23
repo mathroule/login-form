@@ -39,6 +39,7 @@ function test_input($data)
 <div class="col-sm-6 col-sm-offset-3">
 
     <h1>HTTP login form</h1>
+    <h2>Will call index.php</h2>
 
     <form action="index.php" method="POST">
 
