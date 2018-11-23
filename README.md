@@ -8,3 +8,6 @@ Basic login form with username and password:
 
 ## Requirement
 Need PHP to be run.
+
+## Credit
+Based on [https://github.com/scotch-io/ajax-forms-jquery](https://github.com/scotch-io/ajax-forms-jquery)
