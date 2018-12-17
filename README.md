@@ -6,6 +6,7 @@ Basic login form with username and password:
 * Using [AJAX with relative URL](./ajax-relative-url) (i.e. will call ./process.php)
 * Using [AJAX with relative parent URL](./ajax-relative-parent-url) (i.e. will call ../ajax/process.php)
 * Using [HTTP](./http)
+* Using [Using HTTP with 307 redirect](./http-with-redirect)
 
 Type anything as username and password, the page will display the username and password received by the server if not empty.
 
