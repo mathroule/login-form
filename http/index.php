@@ -38,6 +38,13 @@ function test_input($data)
 
 <div class="col-sm-6 col-sm-offset-3">
 
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="..">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">HTTP login form</li>
+        </ol>
+    </nav>
+
     <h1>HTTP login form</h1>
     <h2>Will call index.php</h2>
 

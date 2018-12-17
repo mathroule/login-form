@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>HTTP form</title>
+    <title>HTTP login form with 307 redirect</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <meta charset="UTF-8">
@@ -38,7 +38,14 @@ function test_input($data)
 
 <div class="col-sm-6 col-sm-offset-3">
 
-    <h1>HTTP login form</h1>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="..">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">HTTP login form with 307 redirect</li>
+        </ol>
+    </nav>
+
+    <h1>HTTP login form with redirect</h1>
     <h2>Will call redirect.php</h2>
 
     <form action="redirect.php" method="POST">
