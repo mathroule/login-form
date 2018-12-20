@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Ajax form with relative URL</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="form.js"></script>
+</head>
+<body>
+<form>
+    <div id="username-group" class="form-group">
+        <label for="username">Username</label>
+        <input type="text" class="form-control" name="username" id="username">
+        <!-- errors will go here -->
+    </div>
+
+    <div id="password-group" class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" name="password" id="password">
+        <!-- errors will go here -->
+    </div>
+
+    <button id="submit" class="btn btn-success">Submit</button>
+</form>
+
+<div id="result" class="top"></div>
+</body>
+</html>

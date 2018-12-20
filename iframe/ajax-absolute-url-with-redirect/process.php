@@ -23,7 +23,7 @@ function test_input($data)
     return $data;
 }
 
-if (!empty($errors) && empty($form)) {
+if (!empty($errors) || empty($form)) {
     $data['success'] = false;
     $data['errors'] = $errors;
     $data['data'] = array();

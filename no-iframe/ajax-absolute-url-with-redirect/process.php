@@ -23,7 +23,7 @@ function test_input($data)
     return $data;
 }
 
-if (!empty($errors) && empty($form)) {
+if (!empty($errors) || empty($form)) {
     $data['success'] = false;
     $data['errors'] = $errors;
     $data['data'] = array();
@@ -32,5 +32,6 @@ if (!empty($errors) && empty($form)) {
     $data['data'] = $form;
 }
 
+header('Access-Control-Allow-Origin: *');
 header('Content-Type: application/json');
 echo json_encode($data);

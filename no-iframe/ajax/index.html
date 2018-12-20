@@ -1,8 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Ajax form with absolute UR</title>
+    <title>Ajax form</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script src="form.js"></script>
     <meta charset="UTF-8">
@@ -10,18 +11,17 @@
 <body>
 <div class="col-sm-6 col-sm-offset-3">
 
-    <nav aria-label="breadcrumb">
+    <nav aria-label="breadcrumb" class="top">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="..">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Ajax form with absolute URL and 307 redirect</li>
+            <li class="breadcrumb-item"><a href="../..">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Ajax form</li>
         </ol>
     </nav>
 
-    <h1>Ajax form with absolute URL and 307 redirect</h1>
-    <h2>Will call http://example.com/redirect.php</h2>
+    <h1>Ajax form</h1>
+    <h2>Will call process.php</h2>
 
     <form>
-
         <div id="username-group" class="form-group">
             <label for="username">Username</label>
             <input type="text" class="form-control" name="username" id="username">
@@ -37,7 +37,7 @@
         <button id="submit" class="btn btn-success">Submit</button>
     </form>
 
-    <div id="result"></div>
+    <div id="result" class="top"></div>
 </div>
 </body>
 </html>
