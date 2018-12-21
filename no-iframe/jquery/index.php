@@ -1,9 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>HTTP login form with 307 redirect</title>
+    <title>HTTP form submitted by jQuery</title>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="form.js"></script>
     <meta charset="UTF-8">
 </head>
 <body>
@@ -38,17 +40,17 @@ function test_input($data)
 
 <div class="col-sm-6 col-sm-offset-3">
 
-    <nav aria-label="breadcrumb">
+    <nav aria-label="breadcrumb" class="top">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="..">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">HTTP login form with 307 redirect</li>
+            <li class="breadcrumb-item"><a href="../..">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">HTTP login form submitted by jQuery</li>
         </ol>
     </nav>
 
-    <h1>HTTP login form with redirect</h1>
-    <h2>Will call redirect.php</h2>
+    <h1>HTTP login form submitted by jQuery</h1>
+    <h2>Will call index.php</h2>
 
-    <form action="redirect.php" method="POST">
+    <form action="index.php" method="POST" id="login-form">
 
         <div id="username-group" class="form-group<?php echo $errors['username'] ? ' has-error' : '' ?>">
             <label for="username">Username</label>
@@ -66,13 +68,13 @@ function test_input($data)
             <?php } ?>
         </div>
 
-        <input type="submit" name="submit" value="Submit" class="btn btn-success">
+        <button id="submit" class="btn btn-success">Submit</button>
     </form>
 
     <?php
     if (empty($errors) && !empty($form)) {
         ?>
-        <div class="alert alert-success">
+        <div class="alert alert-success top">
             <?php
             echo "<h2>Input</h2>";
             echo "<p>";
